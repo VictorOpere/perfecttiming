@@ -12,6 +12,7 @@
 <section class="site-section py-lg">
       <div class="container">
         <div class="row blog-entries">
+          <div class="col-md-12 col-lg-8 main-content">
         
             
        
@@ -22,9 +23,9 @@
             <?php get_template_part( '/inc/template-parts/single', get_post_format());?>
 
                 <?php if (comments_open()):?>
-                    <div class="pt-5">
+                  
                      <?php comments_template();?>
-                    </div>
+                 
 
                 <?php endif; ?>
 
@@ -32,8 +33,8 @@
             <?php endwhile; ?>
         <?php endif; ?>
 
-       
-        </div>
+          
+      
       </div>
         
           <!-- END main-content -->
@@ -43,9 +44,11 @@
           </div>
           
           <!-- END sidebar -->
+          
 
         </div>
       </div>
+
     </section>
 
 <?php get_footer( ); ?>

@@ -179,6 +179,17 @@ add_action( 'wp_enqueue_scripts', 'perfect_theme_scripts');
 
 require_once(get_template_directory( ).'/inc/class-wp-bootstrap-navwalker.php');
 
+/*
+	 * Placing the required files needed for our theme to work
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+     *****
+     
+     
+*/
+
+require_once(get_template_directory( ).'/inc/perfect-comment-helper.php');
+
 
 /*
 	 * Lets register the menus for our theme
@@ -279,8 +290,8 @@ function perfect_register_sidebars() {
             'description'   => __( 'This is the Second Footer Sidebar.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s single-footer-widget">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h6 class="widget-title single-sidebar-widget__title">',
-            'after_title'   => '</h6>',
+            'before_title'  => '<h3 class="widget-title ">',
+            'after_title'   => '</h3>',
         )
     );
 
@@ -291,8 +302,8 @@ function perfect_register_sidebars() {
             'description'   => __( 'This is the Social Media Footer Sidebar.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s mb-5">',
             'after_widget'  => '</div>',
-            'before_title'  => '<h6 class="widget-title single-sidebar-widget__title">',
-            'after_title'   => '</h6>',
+            'before_title'  => '<h3 class="widget-title ">',
+            'after_title'   => '</h3>',
         )
     );
 }
@@ -372,3 +383,31 @@ function perfect_block_setup_theme_supported_features() {
 }
  
 add_action( 'after_setup_theme', 'perfect_block_setup_theme_supported_features' );
+
+
+/*
+	 * Placing the required files needed for our theme customizer to work
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+     *****
+     
+     
+*/
+
+require_once(get_template_directory( ).'/inc/customizer.php');
+
+
+/*
+	 * Placing the required files needed for our theme customizer to work
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+     *****
+     
+     
+*/
+
+
+
+
+
+

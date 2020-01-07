@@ -1,6 +1,6 @@
 <?php 
 /**
- * @package sensitive
+ * @package perfect
  * 
  * This is the Single post template of our theme
  * 

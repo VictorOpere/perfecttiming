@@ -1,13 +1,13 @@
 <?php 
 /**
- * @package sensitive
+ * @package perfect
  * 
  * This is the Single post template of our theme
  * 
  */
 ?>
 
-<?php get_header();?>
+<?php get_header(); ?>
 <section class="site-section">
       <div class="container">
         <div class="row mb-4">
@@ -49,7 +49,7 @@
           </div>
 
           <!-- END main-content -->
-
+          
           <div class="col-md-12 col-lg-4 sidebar">
             <?php get_sidebar( 'primary' );?>
           </div>

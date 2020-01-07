@@ -8,7 +8,7 @@ if( post_password_required() ){
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="pt-5">
 	
 	<?php 
 		if( have_comments() ):
@@ -38,8 +38,8 @@ if( post_password_required() ){
 				$args = array(
 					'walker'			=> null,
 					'max_depth' 		=> '3',
-					'style'				=> 'ol',
-					'callback'			=> '',
+					'style'				=> 'ul',
+					'callback'			=> 'perfect_comments_better',
 					'end-callback'		=> null,
 					'type'				=> 'all',
 					'reply_text'		=> 'Reply',
@@ -86,8 +86,7 @@ if( post_password_required() ){
 			'email' =>
 				'<div class="form-group email"><label for="email">' . __( 'Email', 'sensitive' ) . '</label> <span class="required">*</span><input id="email" name="email" class="form-control" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" required/></div>',
 				
-			'url' =>
-				'<div class="form-group last-field"><label for="url">' . __( 'Website', 'domainreference' ) . '</label><input id="url" name="url" class="form-control" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" /></div>'
+
 				
 		);
 		
@@ -104,5 +103,6 @@ if( post_password_required() ){
 		comment_form( $args ); 
 		
 	?>
-	
+
+	</div>
 </div><!-- .comments-area -->
