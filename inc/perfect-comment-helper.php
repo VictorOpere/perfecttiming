@@ -4,7 +4,7 @@ $GLOBALS['comment'] = $comment; ?>
 <li <?php comment_class('comment'); ?> id="li-comment-<?php comment_ID() ?>">
         <div id="comment-<?php comment_ID(); ?>">
         <div class="vcard">
-            <?php echo get_avatar($comment,$size='36',$default='<path_to_url>' ); ?>
+            <?php echo get_avatar($comment,$size='50',$default=get_option( 'avatar_default', 'wavatar' ), ); ?>
         </div>
         <div class="comment-body">
         <h3><?php echo get_comment_author()?></h3>

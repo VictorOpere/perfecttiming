@@ -7,7 +7,7 @@
 
             <div class="owl-carousel owl-theme home-slider">
             <?php
-                $args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
+                $args = array( 'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'title' );
                 $postslist = get_posts( $args );
                 foreach ($postslist as $post) :  setup_postdata($post); ?> 
 
@@ -48,30 +48,13 @@
         <div class="row blog-entries">
           <div class="col-md-12 col-lg-8 main-content">
             <div class="row">
-            <?php if ( have_posts() ) :;?> 
-
-                <?php while ( have_posts() ) : the_post(); ?>
+            <?php
+                $args = array( 'numberposts' => 20, 'order'=> 'ASC', 'orderby' => 'title' );
+                $postslist = get_posts( $args );
+                foreach ($postslist as $post) :  setup_postdata($post); ?> 
                     <?php get_template_part( 'inc/template-parts/content-recent', get_post_format());?> 
-                <?php endwhile; ?>
-            
-            <?php else : ;?>
-            <div class="col-md-12 text-center"><?php _e( 'Sorry, No Posts Available!', 'perfect' ); ?></div>
-            <?php endif; ?>
+                <?php endforeach; ?>
               
-            </div>
-
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <nav aria-label="Page navigation" class="text-center">
-                  <ul class="pagination">
-                    <li class="page-item  active"><a class="page-link" href="#">Prev</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
-              </div>
             </div>
 
             

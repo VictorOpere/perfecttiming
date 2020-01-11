@@ -27,14 +27,7 @@
             
         
       </div>
-        
-          <!-- END main-content -->
-          
-          <div class="col-md-12 col-lg-4 sidebar">
-            <?php get_sidebar( 'primary' );?>
-          </div>
-
-          <!-- END sidebar -->
+      
 
         </div>
       </div>
