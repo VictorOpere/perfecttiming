@@ -13,8 +13,8 @@ function perfect_customize_register( $wp_customize ) {
      */
         $wp_customize->add_panel( 'social_media_panel',
             array(
-                'title' => __( 'Social Media Section' ),
-                'description' => esc_html__( 'Adjust your Social Media Links' ), // Include html tags such as 
+                'title' => __( 'Social Media Section', 'Perfect' ),
+                'description' => esc_html__( 'Adjust your Social Media Links', 'Perfect' ), // Include html tags such as 
 
                 'priority' => 160, // Not typically needed. Default is 160
                 'capability' => 'edit_theme_options', // Not typically needed. Default is edit_theme_options
@@ -28,8 +28,8 @@ function perfect_customize_register( $wp_customize ) {
          */
         $wp_customize->add_section( 'twitter_link_section',
             array(
-            'title' => __( 'Twitter' ),
-            'description' => esc_html__( 'Edit And Place Your Link For Twitter.' ),
+            'title' => __( 'Twitter', 'Perfect' ),
+            'description' => esc_html__( 'Edit And Place Your Link For Twitter.', 'Perfect' ),
             'panel' => 'social_media_panel', // Only needed if adding your Section to a Panel
             'priority' => 160, // Not typically needed. Default is 160
             'capability' => 'edit_theme_options', // Not typically needed. Default is edit_theme_options
@@ -55,15 +55,15 @@ function perfect_customize_register( $wp_customize ) {
 
         $wp_customize->add_control( 'twitter_page_link',
             array(
-                'label' => __( 'Twitter URL' ),
-                'description' => esc_html__( 'Copy And Paste The URL associated with your Twitter Account' ),
+                'label' => __( 'Twitter URL', 'Perfect' ),
+                'description' => esc_html__( 'Copy And Paste The URL associated with your Twitter Account' , 'Perfect'),
                 'section' => 'twitter_link_section',
                 'priority' => 10, // Optional. Order priority to load the control. Default: 10
                 'type' => 'url', // Can be either text, email, url, number, hidden, or date
                 'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
                 'input_attrs' => array( // Optional.
                     'style' => 'border: 1px solid rebeccapurple',
-                    'placeholder' => __( 'Enter URL ...' ),
+                    'placeholder' => __( 'Enter URL ...', 'Perfect' ),
                 ),
             )
         );
@@ -74,8 +74,8 @@ function perfect_customize_register( $wp_customize ) {
          */
         $wp_customize->add_section( 'facebook_link_section',
             array(
-            'title' => __( 'Facebook' ),
-            'description' => esc_html__( 'Edit And Place Your Link For Facebook.' ),
+            'title' => __( 'Facebook', 'Perfect' ),
+            'description' => esc_html__( 'Edit And Place Your Link For Facebook.', 'Perfect' ),
             'panel' => 'social_media_panel', // Only needed if adding your Section to a Panel
             'priority' => 160, // Not typically needed. Default is 160
             'capability' => 'edit_theme_options', // Not typically needed. Default is edit_theme_options
@@ -101,15 +101,15 @@ function perfect_customize_register( $wp_customize ) {
 
         $wp_customize->add_control( 'facebook_page_link',
             array(
-                'label' => __( 'Facebook URL' ),
-                'description' => esc_html__( 'Copy And Paste The URL associated with your Facebook Account' ),
+                'label' => __( 'Facebook URL', 'Perfect' ),
+                'description' => esc_html__( 'Copy And Paste The URL associated with your Facebook Account', 'Perfect' ),
                 'section' => 'facebook_link_section',
                 'priority' => 10, // Optional. Order priority to load the control. Default: 10
                 'type' => 'url', // Can be either text, email, url, number, hidden, or date
                 'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
                 'input_attrs' => array( // Optional.
                     'style' => 'border: 1px solid rebeccapurple',
-                    'placeholder' => __( 'Enter URL ...' ),
+                    'placeholder' => __( 'Enter URL ...' , 'Perfect'),
                 ),
             )
         );
@@ -119,8 +119,8 @@ function perfect_customize_register( $wp_customize ) {
          */
         $wp_customize->add_section( 'instagram_link_section',
             array(
-            'title' => __( 'Instagram' ),
-            'description' => esc_html__( 'Edit And Place Your Link For Instagram.' ),
+            'title' => __( 'Instagram', 'Perfect' ),
+            'description' => esc_html__( 'Edit And Place Your Link For Instagram.', 'Perfect' ),
             'panel' => 'social_media_panel', // Only needed if adding your Section to a Panel
             'priority' => 160, // Not typically needed. Default is 160
             'capability' => 'edit_theme_options', // Not typically needed. Default is edit_theme_options
@@ -146,15 +146,15 @@ function perfect_customize_register( $wp_customize ) {
 
         $wp_customize->add_control( 'instagram_page_link',
             array(
-                'label' => __( 'Instagram URL' ),
-                'description' => esc_html__( 'Copy And Paste The URL associated with your Instagram Account' ),
+                'label' => __( 'Instagram URL', 'Perfect' ),
+                'description' => esc_html__( 'Copy And Paste The URL associated with your Instagram Account', 'Perfect' ),
                 'section' => 'instagram_link_section',
                 'priority' => 10, // Optional. Order priority to load the control. Default: 10
                 'type' => 'url', // Can be either text, email, url, number, hidden, or date
                 'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
                 'input_attrs' => array( // Optional.
                     'style' => 'border: 1px solid rebeccapurple',
-                    'placeholder' => __( 'Enter URL ...' ),
+                    'placeholder' => __( 'Enter URL ...', 'Perfect' ),
                 ),
             )
         );
@@ -165,8 +165,8 @@ function perfect_customize_register( $wp_customize ) {
          */
         $wp_customize->add_section( 'youtube_link_section',
             array(
-            'title' => __( 'YouTube' ),
-            'description' => esc_html__( 'Edit And Place Your Link For YouTube.' ),
+            'title' => __( 'YouTube', 'Perfect' ),
+            'description' => esc_html__( 'Edit And Place Your Link For YouTube.', 'Perfect' ),
             'panel' => 'social_media_panel', // Only needed if adding your Section to a Panel
             'priority' => 160, // Not typically needed. Default is 160
             'capability' => 'edit_theme_options', // Not typically needed. Default is edit_theme_options
@@ -192,15 +192,15 @@ function perfect_customize_register( $wp_customize ) {
 
         $wp_customize->add_control( 'youtube_page_link',
             array(
-                'label' => __( 'YouTube URL' ),
-                'description' => esc_html__( 'Copy And Paste The URL associated with your YouTube Account' ),
+                'label' => __( 'YouTube URL', 'Perfect' ),
+                'description' => esc_html__( 'Copy And Paste The URL associated with your YouTube Account', 'Perfect' ),
                 'section' => 'youtube_link_section',
                 'priority' => 10, // Optional. Order priority to load the control. Default: 10
                 'type' => 'url', // Can be either text, email, url, number, hidden, or date
                 'capability' => 'edit_theme_options', // Optional. Default: 'edit_theme_options'
                 'input_attrs' => array( // Optional.
                     'style' => 'border: 1px solid rebeccapurple',
-                    'placeholder' => __( 'Enter URL ...' ),
+                    'placeholder' => __( 'Enter URL ...', 'Perfect' ),
                 ),
             )
         );

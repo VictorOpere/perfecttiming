@@ -16,8 +16,8 @@
                         <div class="text half-to-full">
                           <div class="post-meta">
                             <span class="category"><?php the_author()?></span>
-                            <span class="mr-2"><?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?></span> &bullet;
-                            <span class="ml-2"><span class="fa fa-comments"></span> <?php echo get_comments_number($post->ID);?></span>
+                            <span class="mr-2"><?php echo esc_html(human_time_diff( get_the_time('U'), current_time('timestamp') )) . ' ago'; ?></span> &bullet;
+                            <span class="ml-2"><span class="fa fa-comments"></span> <?php echo esc_html(get_comments_number($post->ID));?></span>
                           </div>
                           <?php the_title( '<h3>', '</h3>')?>
 

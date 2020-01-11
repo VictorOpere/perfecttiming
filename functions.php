@@ -139,6 +139,7 @@ function perfect_theme_scripts()
 {
     # code...
     // lets add our CSS to our theme
+    wp_enqueue_style( 'mygooglefonts', 'https://fonts.googleapis.com/css?family=Josefin+Sans:300, 400,700', array(), '1.0.0', 'all' );
 
     wp_enqueue_style( 'mybs', get_template_directory_uri().'/css/bootstrap.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'myanimate', get_template_directory_uri().'/css/animate.css', array(), '1.0.0', 'all' );
@@ -205,7 +206,7 @@ function perfect_register_menus()
     # code...
     // lets add menus for our header and the other for footer
     register_nav_menus( array(
-        'primary_menu' => __( 'Primary Menu', 'perfect' ),
+        'primary_menu' => __( 'Primary Menu', 'Perfect' ),
      
     ) );
 }
@@ -261,8 +262,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'primary',
-            'name'          => __( 'Primary Sidebar' ),
-            'description'   => __( 'This is the Primary Sidebar For The Theme.' ),
+            'name'          => __( 'Primary Sidebar', 'Perfect' ),
+            'description'   => __( 'This is the Primary Sidebar For The Theme.', 'Perfect' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s sidebar-box">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title heading">',
@@ -274,8 +275,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'footer-one',
-            'name'          => __( 'First Footer Sidebar' ),
-            'description'   => __( 'This is the First Footer Sidebar.' ),
+            'name'          => __( 'First Footer Sidebar', 'Perfect' ),
+            'description'   => __( 'This is the First Footer Sidebar.', 'Perfect' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
@@ -286,8 +287,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'footer-two',
-            'name'          => __( 'Second Footer Sidebar' ),
-            'description'   => __( 'This is the Second Footer Sidebar.' ),
+            'name'          => __( 'Second Footer Sidebar', 'Perfect' ),
+            'description'   => __( 'This is the Second Footer Sidebar.', 'Perfect' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s single-footer-widget">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title ">',
@@ -298,8 +299,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'footer-three',
-            'name'          => __( 'Social Media Footer Sidebar' ),
-            'description'   => __( 'This is the Social Media Footer Sidebar.' ),
+            'name'          => __( 'Social Media Footer Sidebar', 'Perfect' ),
+            'description'   => __( 'This is the Social Media Footer Sidebar.', 'Perfect' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s mb-5">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title ">',
@@ -328,17 +329,17 @@ function perfect_block_setup_theme_supported_features() {
 
     add_theme_support( 'editor-color-palette', array(
         array(
-            'name' => __( 'warm yellow', 'perfect' ),
+            'name' => __( 'warm yellow', 'Perfect' ),
             'slug' => 'warm-yellow',
             'color' => '#ff9907',
         ),
         array(
-            'name' => __( 'pint black', 'perfect' ),
+            'name' => __( 'pint black', 'Perfect' ),
             'slug' => 'pint-black',
             'color' => '#222',
         ),
         array(
-            'name' => __( 'light gray', 'themeLangDomain' ),
+            'name' => __( 'light gray', 'Perfect' ),
             'slug' => 'light-gray',
             'color' => '#6c757d',
         ),
@@ -352,22 +353,22 @@ function perfect_block_setup_theme_supported_features() {
 
     add_theme_support( 'editor-font-sizes', array(
         array(
-            'name' => __( 'Small', 'perfect' ),
+            'name' => __( 'Small', 'Perfect' ),
             'size' => 12,
             'slug' => 'small'
         ),
         array(
-            'name' => __( 'Regular', 'perfect' ),
+            'name' => __( 'Regular', 'Perfect' ),
             'size' => 16,
             'slug' => 'regular'
         ),
         array(
-            'name' => __( 'Large', 'perfect' ),
+            'name' => __( 'Large', 'Perfect' ),
             'size' => 36,
             'slug' => 'large'
         ),
         array(
-            'name' => __( 'Huge', 'perfect' ),
+            'name' => __( 'Huge', 'Perfect' ),
             'size' => 50,
             'slug' => 'huge'
         )
