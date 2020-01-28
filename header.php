@@ -43,6 +43,13 @@
               <a href="<?php get_theme_mod('instagram_page_link');?>"><span class="fa fa-instagram"></span></a>
               <a href="<?php get_theme_mod('youtube_page_link');?>"><span class="fa fa-youtube-play"></span></a>
             </div> 
+            <div class="col-3 search-top">
+              <!-- <a href="#"><span class="fa fa-search"></span></a> -->
+              <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="search-top-form">
+                <span class="icon fa fa-search"></span>
+                <input type="text" name="s" class="form-control" id="s" type="text" placeholder="Type keyword to search...">
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -51,7 +58,7 @@
         <div class="row pt-5">
           <div class="col-12 text-center">
             <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
-            <h1 class="site-logo"><a title="<?php bloginfo('name');?>"href="<?php echo esc_url( home_url('/') );?>"><?php bloginfo( 'name' );?></a></h1>
+            <h2 class="site-logo"><a title="<?php bloginfo('name');?>"href="<?php echo esc_url( home_url('/') );?>"><?php bloginfo( 'name' );?></a></h2>
           </div>
         </div>
       </div>
