@@ -1,6 +1,6 @@
 <div class="post-entry-horzontal">
     <a href="<?php echo esc_url( get_permalink() );?>">
-        <div class="image element-animate"  data-animate-effect="fadeIn" style="background-image: url(<?php the_post_thumbnail_url();?>);"></div>
+        <div class="image" style="background-image: url(<?php the_post_thumbnail_url('thumbnail');?>);"></div>
             <span class="text">
                 <div class="post-meta">
                 <span class="category"><?php the_author();?></span>

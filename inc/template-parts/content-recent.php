@@ -1,5 +1,5 @@
 <div class="col-md-6">
-    <a href="<?php echo esc_url( get_permalink() );?>" class="blog-entry element-animate" data-animate-effect="fadeIn">
+    <a href="<?php echo esc_url( get_permalink() );?>" class="blog-entry">
         <img src="<?php the_post_thumbnail_url();?>" alt="<?php the_title();?>">
         <div class="blog-content-body">
             <div class="post-meta">

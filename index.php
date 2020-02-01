@@ -48,13 +48,16 @@
         <div class="row blog-entries">
           <div class="col-md-12 col-lg-8 main-content">
             <div class="row">
-            <?php
-                $args = array( 'numberposts' => 20, 'order'=> 'ASC', 'orderby' => 'title' );
-                $postslist = get_posts( $args );
-                foreach ($postslist as $post) :  setup_postdata($post); ?> 
-                    <?php get_template_part( 'inc/template-parts/content-recent', get_post_format());?> 
-                <?php endforeach; ?>
-              
+
+            <?php if ( have_posts() ) : ?>
+
+              <?php while ( have_posts() ) : the_post(); ?>
+                        
+                <?php get_template_part( '/inc/template-parts/content-recent');?>
+
+              <?php endwhile; ?>
+            <?php endif; ?>
+
             </div>
 
             

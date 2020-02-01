@@ -7,6 +7,11 @@
     <div class="post-content-body">
         <?php the_content( );?>
     </div> 
+
+    <div class="pt-5">
+        <div class="addthis_inline_share_toolbox_cood"></div>
+        <br>
+    </div>
     
     <div class="pt-5">
     <div class="bio text-center">
