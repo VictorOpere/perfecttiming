@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-md-12">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy <?php bloginfo( 'name' );?> | Developed By <a href="">Certified Vic</a> | FrontEnd Made By <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy <?php bloginfo( 'name' );?> | Developed By <a href="https://www.facebook.com/victor.deluna.58">Certified Vic</a> | FrontEnd Made By <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </div>
         </div>
