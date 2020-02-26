@@ -149,7 +149,7 @@ function perfect_theme_scripts()
     wp_enqueue_style( 'myfontawesome', get_template_directory_uri().'/fonts/fontawesome/css/font-awesome.min.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'myflaticon', get_template_directory_uri().'/fonts/flaticon/font/flaticon.css', array(), '1.0.0', 'all' );
 
-    wp_enqueue_style( 'mymain', get_template_directory_uri().'/css/style.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'mymain', get_template_directory_uri().'/css/style.css', array(), '1.0.1', 'all' );
 
     
 
@@ -163,7 +163,7 @@ function perfect_theme_scripts()
     wp_enqueue_script( 'mywaypoints', get_template_directory_uri().'/js/jquery.waypoints.min.js', array('jquery'), '1.0.0', True );
     wp_enqueue_script( 'mystellar', get_template_directory_uri().'/js/jquery.stellar.min.js', array('jquery'), '1.0.0', True );
 
-    wp_enqueue_script( 'mainsrc', get_template_directory_uri().'/js/main.js', array('jquery'), '1.0.0', True );   
+    wp_enqueue_script( 'mainsrc', get_template_directory_uri().'/js/main.js', array('jquery'), '1.0.1', True );   
     wp_enqueue_script( 'mysocialmainscript', "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c4ff3ee78e30c71", '1.0.0', True ); 
     
 }
