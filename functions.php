@@ -207,7 +207,7 @@ function perfect_register_menus()
     # code...
     // lets add menus for our header and the other for footer
     register_nav_menus( array(
-        'primary_menu' => __( 'Primary Menu', 'Perfect' ),
+        'primary_menu' => __( 'Primary Menu', 'perfecttiming' ),
      
     ) );
 }
@@ -263,8 +263,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'primary',
-            'name'          => __( 'Primary Sidebar', 'Perfect' ),
-            'description'   => __( 'This is the Primary Sidebar For The Theme.', 'Perfect' ),
+            'name'          => __( 'Primary Sidebar', 'perfecttiming' ),
+            'description'   => __( 'This is the Primary Sidebar For The Theme.', 'perfecttiming' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s sidebar-box">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title heading">',
@@ -276,8 +276,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'footer-one',
-            'name'          => __( 'First Footer Sidebar', 'Perfect' ),
-            'description'   => __( 'This is the First Footer Sidebar.', 'Perfect' ),
+            'name'          => __( 'First Footer Sidebar', 'perfecttiming' ),
+            'description'   => __( 'This is the First Footer Sidebar.', 'perfecttiming' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
@@ -288,8 +288,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'footer-two',
-            'name'          => __( 'Second Footer Sidebar', 'Perfect' ),
-            'description'   => __( 'This is the Second Footer Sidebar.', 'Perfect' ),
+            'name'          => __( 'Second Footer Sidebar', 'perfecttiming' ),
+            'description'   => __( 'This is the Second Footer Sidebar.', 'perfecttiming' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s single-footer-widget">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title ">',
@@ -300,8 +300,8 @@ function perfect_register_sidebars() {
     register_sidebar(
         array(
             'id'            => 'footer-three',
-            'name'          => __( 'Social Media Footer Sidebar', 'Perfect' ),
-            'description'   => __( 'This is the Social Media Footer Sidebar.', 'Perfect' ),
+            'name'          => __( 'Social Media Footer Sidebar', 'perfecttiming' ),
+            'description'   => __( 'This is the Social Media Footer Sidebar.', 'perfecttiming' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s mb-5">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title ">',
@@ -330,17 +330,17 @@ function perfect_block_setup_theme_supported_features() {
 
     add_theme_support( 'editor-color-palette', array(
         array(
-            'name' => __( 'warm yellow', 'Perfect' ),
+            'name' => __( 'warm yellow', 'perfecttiming' ),
             'slug' => 'warm-yellow',
             'color' => '#ff9907',
         ),
         array(
-            'name' => __( 'pint black', 'Perfect' ),
+            'name' => __( 'pint black', 'perfecttiming' ),
             'slug' => 'pint-black',
             'color' => '#222',
         ),
         array(
-            'name' => __( 'light gray', 'Perfect' ),
+            'name' => __( 'light gray', 'perfecttiming' ),
             'slug' => 'light-gray',
             'color' => '#6c757d',
         ),
@@ -354,22 +354,22 @@ function perfect_block_setup_theme_supported_features() {
 
     add_theme_support( 'editor-font-sizes', array(
         array(
-            'name' => __( 'Small', 'Perfect' ),
+            'name' => __( 'Small', 'perfecttiming' ),
             'size' => 12,
             'slug' => 'small'
         ),
         array(
-            'name' => __( 'Regular', 'Perfect' ),
+            'name' => __( 'Regular', 'perfecttiming' ),
             'size' => 16,
             'slug' => 'regular'
         ),
         array(
-            'name' => __( 'Large', 'Perfect' ),
+            'name' => __( 'Large', 'perfecttiming' ),
             'size' => 36,
             'slug' => 'large'
         ),
         array(
-            'name' => __( 'Huge', 'Perfect' ),
+            'name' => __( 'Huge', 'perfecttiming' ),
             'size' => 50,
             'slug' => 'huge'
         )

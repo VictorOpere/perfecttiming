@@ -19,7 +19,7 @@ if( post_password_required() ){
 			<?php
 				
 				printf(
-					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'Perfect' ) ),
+					esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'perfecttiming' ) ),
 					esc_html(number_format_i18n( get_comments_number() )),
 					'<span>' . esc_html(get_the_title()) . '</span>'
 				);
@@ -66,7 +66,7 @@ if( post_password_required() ){
 			if( !comments_open() && get_comments_number() ):
 		?>
 			 
-			 <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'Perfect' ); ?></p>
+			 <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'perfecttiming' ); ?></p>
 			 
 		<?php
 			endif;
@@ -81,10 +81,10 @@ if( post_password_required() ){
 		$fields = array(
 			
 			'author' =>
-				'<div class="form-group name"><label for="author">' . __( 'Name', 'Perfect' ) . '</label> <span class="required">*</span> <input id="author" name="author" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author'] ) . '" required /></div>',
+				'<div class="form-group name"><label for="author">' . __( 'Name', 'perfecttiming' ) . '</label> <span class="required">*</span> <input id="author" name="author" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author'] ) . '" required /></div>',
 				
 			'email' =>
-				'<div class="form-group email"><label for="email">' . __( 'Email', 'Perfect' ) . '</label> <span class="required">*</span><input id="email" name="email" class="form-control" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" required/></div>',
+				'<div class="form-group email"><label for="email">' . __( 'Email', 'perfecttiming' ) . '</label> <span class="required">*</span><input id="email" name="email" class="form-control" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" required/></div>',
 				
 
 				
@@ -93,9 +93,9 @@ if( post_password_required() ){
 		$args = array(
 			
 			'class_submit' => 'btn btn-primary',
-			'label_submit' => __( 'Submit Comment', 'Perfect' ),
+			'label_submit' => __( 'Submit Comment', 'perfecttiming' ),
 			'comment_field' =>
-				'<div class="form-group"><label for="comment">' . _x( 'Comment', 'Perfect' ) . '</label> <span class="required">*</span><textarea id="comment" class="form-control mb-10" name="comment" rows="5" required></textarea></p>',
+				'<div class="form-group"><label for="comment">' . _x( 'Comment', 'perfecttiming' ) . '</label> <span class="required">*</span><textarea id="comment" class="form-control mb-10" name="comment" rows="5" required></textarea></p>',
 			'fields' => apply_filters( 'comment_form_default_fields', $fields )
 			
 		);

@@ -9,10 +9,10 @@ $GLOBALS['comment'] = $comment; ?>
         <div class="comment-body">
         <h3><?php echo esc_html(get_comment_author());?></h3>
         <div class="meta"><a href="<?php echo esc_html(htmlspecialchars(get_comment_link( $comment->comment_ID ))) ?>">
-            <?php printf(__('%1$s at %2$s', 'Perfect'), esc_html(get_comment_date()),esc_html(get_comment_time())) ?></a><?php edit_comment_link(__('(Edit)'),'  ','') ?></div>
+            <?php printf(__('%1$s at %2$s', 'perfecttiming'), esc_html(get_comment_date()),esc_html(get_comment_time())) ?></a><?php edit_comment_link(__('(Edit)'),'  ','') ?></div>
             
             <?php if ($comment->comment_approved == '0') : ?>
-                <em><?php esc_html_e('Your comment is awaiting moderation.', 'Perfect');?></em>
+                <em><?php esc_html_e('Your comment is awaiting moderation.', 'perfecttiming');?></em>
                 <br />
             <?php endif; ?>
 
