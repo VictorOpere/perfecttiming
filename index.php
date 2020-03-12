@@ -7,7 +7,7 @@
 
             <div class="owl-carousel owl-theme home-slider">
             <?php
-                $args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
+                $args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'ID' );
                 $postslist = get_posts( $args );
                 foreach ($postslist as $post) :  setup_postdata($post); ?> 
 
