@@ -29,6 +29,22 @@
 </head>
 <body <?php body_class( );?> >
 
+
+<?php 
+
+  /**
+   * For compability with WordPress 5.2.0 onwards
+   */
+
+  if( !function_exists('wp_body_open')){
+
+     wp_body_open();
+
+  }
+
+?>
+
+
 <header role="banner">
       <div class="top-bar">
         <div class="container">
