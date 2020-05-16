@@ -181,16 +181,7 @@ add_action( 'wp_enqueue_scripts', 'perfect_theme_scripts');
 
 require_once(get_template_directory( ).'/inc/class-wp-bootstrap-navwalker.php');
 
-/*
-	 * Placing the required files needed for our theme to work
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-     *****
-     
-     
-*/
 
-require_once(get_template_directory( ).'/inc/perfect-comment-helper.php');
 
 
 /*
@@ -407,6 +398,50 @@ require_once(get_template_directory( ).'/inc/customizer.php');
      
      
 */
+
+/*
+	 * Placing the required files needed for our theme Custom comment walker.
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+     *****
+     
+     
+*/
+
+
+
+
+require get_template_directory() . '/inc/class-perfecttiming-walker-comment.php';
+
+
+
+/**
+ * Comments
+ */
+/**
+ * Check if the specified comment is written by the author of the post commented on.
+ *
+ * @param object $comment Comment data.
+ *
+ * @return bool
+ */
+function perfecttiming_is_comment_by_post_author( $comment = null ) {
+
+	if ( is_object( $comment ) && $comment->user_id > 0 ) {
+
+		$user = get_userdata( $comment->user_id );
+		$post = get_post( $comment->comment_post_ID );
+
+		if ( ! empty( $user ) && ! empty( $post ) ) {
+
+			return $comment->user_id === $post->post_author;
+
+		}
+	}
+	return false;
+
+}
+
 
 
 

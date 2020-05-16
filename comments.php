@@ -36,16 +36,16 @@ if( post_password_required() ){
 			<?php 
 				
 				$args = array(
-					'walker'			=> null,
+					'walker'			=>  new PerfectTiming_Walker_Comment(),
 					'max_depth' 		=> '3',
 					'style'				=> 'ul',
-					'callback'			=> 'perfect_comments_better',
+					'callback'			=> '',
 					'end-callback'		=> null,
 					'type'				=> 'all',
 					'reply_text'		=> 'Reply',
 					'page'				=> '',
 					'per_page'			=> '',
-					'avatar_size'		=> 42,
+					'avatar_size'		=> 50,
 					'reverse_top_level' => null,
 					'reverse_children'	=> '',
 					'format'			=> 'html5',
