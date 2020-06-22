@@ -32,7 +32,7 @@
         </div>
         <div class="row">
         <?php
-                $args = array( 'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'comment_count');
+                $args = array( 'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'date');
                 $postslist = get_posts( $args );
                 foreach ($postslist as $post) :  setup_postdata($post); ?> 
 
