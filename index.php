@@ -1,13 +1,13 @@
 <?php get_header( );?>
 
-<section class="site-section pt-5">
+ <section class="site-section pt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
 
             <div class="owl-carousel owl-theme home-slider">
             <?php
-                $args = array( 'numberposts' => 3, 'order'=> 'ASC', 'orderby' => 'ID' );
+                $args = array( 'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
                 $postslist = get_posts( $args );
                 foreach ($postslist as $post) :  setup_postdata($post); ?> 
 
@@ -26,18 +26,38 @@
                     </div>
 
               <?php endforeach; ?>
-              
             </div>
             
           </div>
         </div>
-      
+        <div class="row">
+        <?php
+                $args = array( 'numberposts' => 3, 'order'=> 'DESC', 'orderby' => 'comment_count');
+                $postslist = get_posts( $args );
+                foreach ($postslist as $post) :  setup_postdata($post); ?> 
+
+          <div class="col-md-6 col-lg-4">
+            <a href="<?php echo esc_url( get_permalink() );?>" class="a-block d-flex align-items-center height-md" style="background-image: url(<?php the_post_thumbnail_url();?>); ">
+              <div class="text">
+                <div class="post-meta">
+                  <span class="category"><?php the_author()?></span>
+                  <span class="mr-2"><?php the_date();?> </span> &bullet;
+                  <span class="ml-2"><span class="fa fa-comments"></span> <?php echo esc_html(get_comments_number($post->ID));?></span>
+                </div>
+                <?php the_title( '<h3>', '</h3>')?>
+              </div>
+            </a>
+          </div>
+
+          <?php endforeach; ?>
+
+        </div>
       </div>
 
 
     </section>
     <!-- END section -->
-
+    
     <section class="site-section py-sm">
       <div class="container">
         <div class="row">
