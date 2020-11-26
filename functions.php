@@ -373,6 +373,10 @@ function perfect_block_setup_theme_supported_features() {
     // lets add the theme support for editor block styles
     
     add_theme_support( 'wp-block-styles' );
+
+    add_theme_support( 'editor-styles' );
+
+    add_editor_style( '/css/style.css' );
 }
  
 add_action( 'after_setup_theme', 'perfect_block_setup_theme_supported_features' );

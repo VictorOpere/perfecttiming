@@ -9,7 +9,7 @@
     </div> 
 
     <div class="pt-5">
-        <div class="addthis_inline_share_toolbox_cood"></div>
+        <div class="sharethis-inline-share-buttons"></div>
         <br>
     </div>
     

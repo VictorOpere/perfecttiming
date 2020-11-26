@@ -1,6 +1,6 @@
 <div class="col-md-6">
     <a href="<?php echo esc_url( get_permalink() );?>" class="blog-entry">
-        <img src="<?php the_post_thumbnail_url();?>" alt="<?php the_title();?>">
+        <img src="<?php the_post_thumbnail_url();?>" alt="<?php the_title();?>" width="500px" height="250px">
         <div class="blog-content-body">
             <div class="post-meta">
             <span class="category"><?php the_author();?></span>
